@@ -1,0 +1,115 @@
+.occupation-section .container {
+  padding: 0;
+}
+.occupation-container-list-box {
+  padding: 64px 16px;
+  background-color: var(--secondary-background-color);
+}
+.adout-us {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-bottom: 30px;
+}
+.adout-us::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background-color: var(--text-color);
+}
+.occupation-title {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 28px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+.occupation-container-text {
+  margin-bottom: 30px;
+}
+.occupation-text {
+  display: block;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+.occupation-text-li {
+  padding-bottom: 14px;
+  font-size: 50px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.occupation-container-list {
+  padding: 0 86px;
+}
+.occupation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .occupation-title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .occupation-text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .occupation-list li {
+    min-width: 170px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .occupation-section .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .occupation-container-list-box {
+    padding: 36px 64px;
+    margin-bottom: 30px;
+  }
+  .occupation-container-list {
+    padding: 0;
+  }
+  .occupation-list {
+    flex-direction: row;
+    gap: 33px;
+  }
+
+  .mobile-img-wrapper picture {
+    display: block;
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .occupation-section .container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .occupation-container-list-box {
+    width: 760px;
+    padding: 36px 69px 37px;
+  }
+  .occupation-container-list {
+    padding: 0;
+  }
+  .occupation-list {
+    flex-direction: row;
+    gap: 56px;
+  }
+}

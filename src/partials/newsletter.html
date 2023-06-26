@@ -1,0 +1,110 @@
+<section class="newsletter-section" id="newsletter">
+  <div class="container">
+    <div class="newsletter-box">
+      <h2 class="newsletter-title">Newsletter</h2>
+      <p class="newsletter-text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="newsletter-form" name="newsletter-form" autocomplete="off">
+        <label class="newsletter-label">
+          <input
+            class="newsletter-input"
+            type="text"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Name must be two words separated by space."
+            placeholder="Name"
+            name="newsletter-form"
+          />
+        </label>
+        <label class="newsletter-label">
+          <input
+            type="email"
+            class="newsletter-input"
+            required
+            title="E-mail must have @"
+            placeholder="E-mail"
+            name="newsletter-form"
+        /></label>
+        <div class="checkbox-box">
+          <input
+            class="checkbox visually-hidden"
+            id="newsletter-checkbox"
+            type="checkbox"
+            name="newsletter-form"
+          />
+          <label class="icon-checkbox" for="newsletter-checkbox">
+            <svg class="svg-icon" width="25" height="25">
+              <use class="to-fill" href="./img/icons.svg#icon-checkbox"></use>
+            </svg>
+            <span> Agree to subscribe to the newsletter </span>
+          </label>
+        </div>
+        <button type="submit" class="newsletter-btn">Send</button>
+      </form>
+    </div>
+    <div class="newsletter-box-img">
+      <picture class="newsletter-img">
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/contacts/dekstop/contacts1_desk.webp    1x,
+            /img/contacts/dekstop/contacts1_desk@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/contacts/dekstop/contacts1_desk.jpg    1x,
+            /img/contacts/dekstop/contacts1_desk@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/contacts/tablet/contacts1_tab.webp    1x,
+            /img/contacts/tablet/contacts1_tab@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/contacts/tablet/contacts1_tab.jpg    1x,
+            /img/contacts/tablet/contacts1_tab@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/contacts/mobile/contacts1_mob.webp    1x,
+            /img/contacts/mobile/contacts1_mob@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/contacts/mobile/contacts1_mob.jpg    1x,
+            /img/contacts/mobile/contacts1_mob@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          class="newsletter-card-img"
+          src="./img/contacts/mobile/contacts1_mob.jpg"
+          alt="Sofa"
+          min-width="343"
+          height="300"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

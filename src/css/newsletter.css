@@ -1,0 +1,106 @@
+:root {
+  --dark-grey: #b6b6b6;
+  --grey: #d9d9d9;
+}
+.newsletter-section .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.newsletter-box {
+  padding-bottom: 30px;
+}
+.newsletter-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}
+.newsletter-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.newsletter-input {
+  width: 100%;
+  height: 50px;
+  padding: 11px 20px;
+  margin-bottom: 20px;
+  color: var(--grey);
+  border: 1px solid var(--dark-grey);
+  outline: transparent;
+
+  transition: border-color 500ms ease, box-shadow 500ms ease;
+}
+.newsletter-input:valid {
+  box-shadow: 2px 2px 2px 1px rgba(2, 22, 58, 0.603);
+}
+.newsletter-input:not(:placeholder-shown):required:invalid {
+  box-shadow: 2px 2px 2px 1px rgba(131, 1, 1, 0.603);
+  border-color: rgb(163, 5, 5);
+}
+.newsletter-input:focus {
+  border-color: var(--tertiary-background-color);
+}
+.checkbox-box {
+  margin-bottom: 32px;
+}
+.icon-checkbox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--dark-grey);
+}
+.svg-icon {
+  padding: 0 3px;
+  border: 1px solid var(--dark-grey, #b6b6b6);
+  transition: border 500ms ease;
+  transition: background-color 500ms ease;
+}
+.checkbox.visually-hidden:checked + .icon-checkbox > .svg-icon {
+  background-color: var(--tertiary-background-color);
+  border: none;
+}
+.newsletter-btn:hover,
+.newsletter-btn:focus {
+  color: #0a224a;
+  outline: 1px solid #0a224a;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  .newsletter-section .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .newsletter-box {
+    width: 536px;
+    padding-bottom: 64px;
+  }
+  .newsletter-title {
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .newsletter-text {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+  .checkbox-box {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .newsletter-section .container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-left: 172px;
+    padding-right: 172px;
+  }
+  .newsletter-box {
+    padding-bottom: 0;
+  }
+}
