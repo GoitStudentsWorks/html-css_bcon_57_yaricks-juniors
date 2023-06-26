@@ -1,0 +1,170 @@
+.hero-section {
+  padding-top: 140px;
+  padding-bottom: 313px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-image: url(../img/hero-bg/mobile/hero-bg1_mob.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url(../img/hero-bg/mobile/hero-bg1_mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439.9px) {
+  .hero-section {
+    padding-top: 64px;
+    padding-bottom: 100px;
+
+    background-image: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    padding-top: 64px;
+    padding-bottom: 100px;
+
+    background-image: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439.9px) {
+  .hero-wrapper {
+    min-width: 704px;
+    min-height: 528px;
+
+    background: url(../img/hero-bg/tablet/hero-bg1_tab.jpg) top right / 364px
+        531px no-repeat,
+      url(../img/hero-bg/tablet/hero-bg2_tab.jpg) bottom left / 310px 329px
+        no-repeat;
+    margin: 0 auto;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrapper {
+      background: url(../img/hero-bg/tablet/hero-bg1_tab@2x.jpg) top right /
+          364px 531px no-repeat,
+        url(../img/hero-bg/tablet/hero-bg2_tab@2x.jpg) bottom left / 310px 329px
+          no-repeat;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-wrapper {
+    min-width: 983px;
+    height: 530px;
+
+    background: url(../img/hero-bg/desktop/hero-bg3_desk.jpg),
+      url(../img/hero-bg/desktop/hero-bg1_desk.jpg);
+    background-position: left bottom, right;
+    background-repeat: no-repeat;
+    /* url(../img/hero-bg/desktop/hero-bg2_desk.jpg) top right / 312px 337px
+        no-repeat; */
+  }
+  .hero-tumb {
+    background: url(../img/hero-bg/desktop/hero-bg2_desk.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .hero-section .container {
+    display: flex;
+    gap: 25px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrapper {
+      min-width: 983px;
+      height: 530px;
+
+      background: url(../img/hero-bg/desktop/hero-bg3_desk.jpg),
+        url(../img/hero-bg/desktop/hero-bg1_desk.jpg);
+      background-position: left bottom, right;
+      background-repeat: no-repeat;
+      /* url(../img/hero-bg/desktop/hero-bg2_desk.jpg) top right / 312px 337px
+        no-repeat; */
+    }
+    .hero-tumb {
+      background: url(../img/hero-bg/desktop/hero-bg2_desk.jpg) top right /
+        312px 337px no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .hero-section .container {
+      display: flex;
+      gap: 25px;
+    }
+  }
+}
+.hero-title {
+  width: 285px;
+  font-size: 28px;
+  font-family: Playfair Display, serif;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: var(--headers-color);
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.9px) {
+  .hero-title {
+    width: 648px;
+    font-size: 50px;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-title {
+    width: 648px;
+    font-size: 50px;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+.hero-text {
+  color: var(--text-color);
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.9px) {
+  .hero-text {
+    width: 312px;
+
+    font-size: 18px;
+
+    margin-top: 32px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-text {
+    width: 312px;
+
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-tumb {
+  }
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  color: #0a224a;
+  outline: 1px solid #0a224a;
+  background-color: white;
+}

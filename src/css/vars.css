@@ -1,0 +1,11 @@
+:root {
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color:#F7FAFF;
+    --tertiary-background-color:#0A224A;
+    --headers-color: #0A224A;
+    --text-color: #0A224A;
+    --primary-link-color: #0A224A;
+    --secondary-link-color: #FFFFFF;
+
+    scroll-behavior: smooth;
+  }

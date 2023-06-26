@@ -1,0 +1,118 @@
+.prices-section {
+  padding: 64px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .prices-section {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .prices-section {
+    padding: 100px 0;
+  }
+  .prices-section .container {
+      padding-left: 172px;
+      padding-right: 172px;
+    }
+
+  }
+
+.prices-list {
+  position: relative;
+}
+
+.prices-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 29px;
+  padding-bottom: 30px;
+  border-top: 1px solid var(--text-color);
+}
+.prices-list-item:last-child {
+  border-bottom: 1px solid var(--text-color);
+}
+.prices-list-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  text-transform: uppercase;
+
+  color: var(--text-color);
+
+  transform: translateX(0);
+  transition: transform 300ms ease-in;
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .prices-list-btn {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .prices-list-btn {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+}
+
+.prices-list-item:hover .prices-list-btn {
+  transform: translateX(54px);
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .prices-list-item:hover .prices-list-btn {
+    transform: translateX(80px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .prices-list-item:hover .prices-list-btn {
+    transform: translateX(80px);
+  }
+}
+
+.prices-list-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+
+  width: 40px;
+  height: 3px;
+
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 300ms ease-in;
+
+  background-color: var(--text-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .prices-list-item:before {
+    width: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .prices-list-item:before {
+    width: 50px;
+  }
+}
+
+.prices-list-item:hover::before {
+  transform: scaleX(1);
+}
+
+.prices-list-value {
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .prices-list-value {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .prices-list-value {
+    font-size: 18px;
+  }
+}
