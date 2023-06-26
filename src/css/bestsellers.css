@@ -157,7 +157,6 @@
     font-size: 18px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .bestsellers-descr,
   .bestsellers-price {
@@ -170,7 +169,6 @@
     font-size: 18px;
   }
 }
-
 .bestsellers-price {
   font-weight: 700;
 }
