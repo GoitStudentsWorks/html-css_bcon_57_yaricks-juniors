@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/yaricks-juniors-team-project-bc57/",
+    "build": "vite build --base=/html-css_bcon_57_yaricks-juniors/",
     "preview": "vite preview"
   },
   "devDependencies": {
