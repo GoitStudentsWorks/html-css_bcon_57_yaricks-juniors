@@ -11,7 +11,6 @@
     padding: 100px 0;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .bestsellers-section > .container {
     padding-left: 172px;
@@ -40,7 +39,6 @@
     font-size: 32px;
   }
 }
-
 .bestsellers-list,
 .bestsellers-list-tab-desc {
   display: flex;
@@ -59,7 +57,6 @@
     grid-template: auto / 1fr 1fr;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .bestsellers-list-tab-desc {
     display: flex;
@@ -157,7 +154,6 @@
     font-size: 18px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .bestsellers-descr,
   .bestsellers-price {
@@ -170,7 +166,6 @@
     font-size: 18px;
   }
 }
-
 .bestsellers-price {
   font-weight: 700;
 }
