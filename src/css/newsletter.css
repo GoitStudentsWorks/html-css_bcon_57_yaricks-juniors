@@ -91,6 +91,9 @@
   .checkbox-box {
     margin-bottom: 30px;
   }
+  .newsletter-card-img {
+    width: 704px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .newsletter-section .container {
@@ -102,5 +105,8 @@
   }
   .newsletter-box {
     padding-bottom: 0;
+  }
+  .newsletter-card-img {
+    width: 460px;
   }
 }

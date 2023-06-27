@@ -67,6 +67,9 @@
   .occupation-list li {
     min-width: 170px;
   }
+  .card-img {
+    width: 704px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .occupation-section .container {
@@ -110,5 +113,8 @@
   .occupation-list {
     flex-direction: row;
     gap: 56px;
+  }
+  .card-img {
+    width: 536px;
   }
 }
